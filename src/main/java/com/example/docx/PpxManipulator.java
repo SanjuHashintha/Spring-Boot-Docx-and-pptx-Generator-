@@ -61,11 +61,6 @@ public class PpxManipulator {
             }
 
 
-//            for (int i = 1; i < rows.size(); i++) {
-//                pieDataset.setValue(rows.get(i).getCell(0).getText(), Integer.parseInt(rows.get(i).getCell(1).getText()));
-//                barDataset.addValue(Integer.parseInt(rows.get(i).getCell(1).getText()), "Count", rows.get(i).getCell(0).getText());
-//            }
-
             JFreeChart pieChart = ChartFactory.createPieChart("Gender Distribution (Pie Chart)", pieDataset, true, true, false);
             JFreeChart barChart = ChartFactory.createBarChart("Gender Distribution (Bar Chart)", "Gender", "Count", barDataset);
 
